@@ -1,0 +1,226 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containers {
+    width: 280px;
+    aspect-ratio: 1/1;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.square {
+    position: absolute;
+    border: 1px solid #0eefff52;
+    border-radius: 50%;
+}
+
+.mercury, .venus, .earth, .mars, .jupiter, .saturn, .uranus, .neptune{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%); 
+}
+
+.mercury{
+    height: 5px;
+    aspect-ratio: 1/1;
+    background-color: #adadad;
+}
+
+.venus{
+    height: 8px;
+    aspect-ratio: 1/1;
+    background-image: linear-gradient(burlywood,#cc7400,burlywood);
+}
+
+.earth{
+    height: 9px;
+    aspect-ratio: 1/1;
+    background-image: linear-gradient(steelblue,seagreen);
+}
+
+.mars{
+    height: 7px;
+    aspect-ratio: 1/1;
+    background-image: linear-gradient(orangered,red);
+}
+
+.jupiter{
+    height: 18px;
+    aspect-ratio: 1/1;
+    background-image: linear-gradient(orangered,burlywood,brown);
+}
+
+.uranus{
+    height: 11px;
+    aspect-ratio: 1/1;
+    background-image: radial-gradient( skyblue, steelblue);
+}
+
+.neptune{
+    height: 11px;
+    aspect-ratio: 1/1;
+    background-image: radial-gradient(  steelblue, #0066ff);
+}
+
+/* neptune */
+.p1 {
+    height: 115%;
+    aspect-ratio: 1/1;
+    animation: orbit 60s linear infinite;
+}
+
+/* uranus */
+.p2 {
+    height: 102%;
+    aspect-ratio: 1/1;
+    animation: orbit 45s linear infinite;
+}
+
+/* saturn */
+.p3 {
+    height: 88.5%;
+    aspect-ratio: 1/1;
+    animation: orbit 35s linear infinite;
+}
+
+/* jupiter */
+.p4 {
+    height: 72%;
+    aspect-ratio: 1/1;
+    animation: orbit 25s linear infinite;
+}
+
+/* asteroids */
+
+.pA8{
+    height: 62%;
+    aspect-ratio: 1/1;
+}
+
+.pA7{
+    height: 61%;
+    aspect-ratio: 1/1;
+}
+
+.pA6{
+    height: 60%;
+    aspect-ratio: 1/1;
+}
+
+.pA5{
+    height: 59%;
+    aspect-ratio: 1/1;
+}
+
+.pA4{
+    height: 58%;
+    aspect-ratio: 1/1;
+}
+
+.pA3{
+    height: 57%;
+    aspect-ratio: 1/1;
+}
+
+.pA2{
+    height: 56%;
+    aspect-ratio: 1/1;
+}
+
+.pA1{
+    height: 55%;
+    aspect-ratio: 1/1;
+}
+
+/* mars */
+.p5 {
+    height: 48%;
+    aspect-ratio: 1/1;
+    animation: orbit 13s linear infinite;
+}
+
+/* earth */
+.p6 {
+    height: 38%;
+    aspect-ratio: 1/1;
+    animation: orbit 10s linear infinite;
+}
+
+/* venus */
+.p7 {
+    height: 28%;
+    aspect-ratio: 1/1;
+    animation: orbit 5s linear infinite;
+}
+
+/* mercury */
+.p8 {
+    height: 18%;
+    aspect-ratio: 1/1;
+    animation: orbit 3s linear infinite;
+}
+
+.sun{
+    border-radius: 50%;
+    height: 10%;
+    aspect-ratio: 1/1;
+    border: none;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 10px orangered;
+    background-image: radial-gradient(orangered, orange);
+    color: white;
+    font-size: 13px;
+}
+
+
+@keyframes orbit{
+0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}
+}
+
+
+table{
+    border-collapse: collapse;
+}
+
+table,tr,td{
+    border: 1px solid salmon;
+}
+
+td{
+    padding: 5px;
+}
+
+
+.eng-name{
+    font-size: 15px;
+}
+
+.icon{
+    height: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.facts{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+button{
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px #357a38;
+    background-color: #4CAF50;
+}
